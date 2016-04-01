@@ -1,0 +1,25 @@
+package bank;
+
+public class Checking implements IAccount {
+
+	private static int counter;
+	public int balance = IAccount.balance;
+
+    public Checking() {
+        counter++;
+    }
+
+    public static int getNumOfInstances() {
+        return counter;
+    }
+    
+    int id = counter + 1;
+    
+    public int Withdraw(int amount){
+    	int beginBalance = balance;
+    	int finalBalance = beginBalance - amount;
+    	balance = finalBalance;
+    	return finalBalance;
+    }
+	
+}

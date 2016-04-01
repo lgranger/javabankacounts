@@ -1,0 +1,9 @@
+package bank;
+
+public interface IAccount {
+	
+	int id;
+	int balance = 0;
+	Owner ownerName = new Owner();
+	
+}

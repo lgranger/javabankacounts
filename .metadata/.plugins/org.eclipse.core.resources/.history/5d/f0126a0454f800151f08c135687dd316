@@ -1,0 +1,14 @@
+package bank;
+
+public class Transactions {
+
+	public static void main(String[] args) {
+		Checking myChecking = new Checking();
+		System.out.print(myChecking.id);
+
+		Checking yourChecking = new Checking();
+		System.out.print(yourChecking.id);
+		
+	}
+
+}
